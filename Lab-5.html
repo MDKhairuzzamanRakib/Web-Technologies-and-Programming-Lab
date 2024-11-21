@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with Table Layout (4074)</title>
+    <style>
+        table {
+            width: 50%;
+            margin: 0 auto;
+            border: 2px solid #d3d3d3;
+            background-color: #ffffe0;
+            padding: 10px;
+        }
+        td {
+            padding: 8px;
+        }
+        input[type="text"], textarea, select {
+            width: 100%;
+        }
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" name="name"></td>
+                <td rowspan="3">Comments:<br><textarea name="comments" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="text" name="email"></td>
+            </tr>
+            <tr>
+                <td>Department:</td>
+                <td>
+                    <select name="department">
+                        <option>Select Any Value</option>
+                        <option>CSE</option>
+                        <option>Civil</option>
+                        <option>Electrical</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" name="gender" value="male"> Male
+                    <input type="radio" name="gender" value="female"> Female
+                </td>
+                <td>Favourite Subject:
+                    <input type="checkbox" name="subject1" value="F3026"> F3026
+                    <input type="checkbox" name="subject2" value="F3038" checked> F3038
+                    <input type="checkbox" name="subject3" value="F4106"> F4106
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" class="center">
+                    <button type="submit">Send Information</button>
+                    <button type="reset">Clear All</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
